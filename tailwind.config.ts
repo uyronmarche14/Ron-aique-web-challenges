@@ -11,6 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        dot1blue: "var(--dot1blue)",
+        dot2vio: "var(--dot2vio)",
+        button: "var(--button)",
       },
     },
   },
