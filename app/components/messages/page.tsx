@@ -1,7 +1,5 @@
 "use client";
 import { useState } from "react";
-import vb from "@/public/Frame 1000004371.svg";
-import Image from "next/image";
 
 export const Messages = () => {
   const [clicked, setClicked] = useState<number | null>(null);

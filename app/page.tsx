@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "./components/navbar/page";
 import Hero from "@/app/pages/hero/page";
 import Ps from "@/app/pages/section_grid/page";
