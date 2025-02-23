@@ -1,11 +1,11 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Home from "@/public/Frame 1000004364.png";
 
 export default function Contact() {
   interface products {
     id: number;
     name: string;
-    logoUrl: string;
+    logoUrl: StaticImageData;
   }
   const products: products[] = [
     {
@@ -18,7 +18,7 @@ export default function Contact() {
   return (
     <div className="space-between justify-start items-start w-[406px] h-[274px] px-[12px] gap-[12px] md:w-[734px] md:h-[277px] flex flex-col gap-[12px]">
       <div className="flex flex-col items-start justify-start">
-        <p className="font-semibold text-button md:text-xl text-base/16px tracking-[0]  ">
+        <p className="font-semibold text-button md:text-xl text-base/16px tracking-[0]">
           Contact Us
         </p>
         <h1 className="font-bold text-black md:text-[42px] text-[20px] text-base/51px tracking-[0]">
@@ -29,28 +29,18 @@ export default function Contact() {
           tempor
         </p>
       </div>
-      <div className="flex flex-row items-center justify-start w-734px h-170px gap-[10px]">
-        <Image src={Home} alt="vb"></Image>
-        <div className="flex flex-col">
-          <p className="text-black font-bold text-sm">Our Location</p>
-          <p className="text-black text-base">One World Place, Lane R, BGC</p>
+      {[...Array(3)].map((_, index) => (
+        <div
+          key={index}
+          className="flex flex-row items-center justify-start w-734px h-170px gap-[10px]"
+        >
+          <Image src={Home} alt="vb" className="overflow-clip"></Image>
+          <div className="flex flex-col">
+            <p className="text-black font-bold text-sm">Our Location</p>
+            <p className="text-black text-base">One World Place, Lane R, BGC</p>
+          </div>
         </div>
-      </div>
-      <div className="flex flex-row items-center justify-start w-734px h-170px gap-[10px]">
-        <Image src={Home} alt="vb"></Image>
-        <div className="flex flex-col">
-          <p className="text-black font-bold text-sm">Our Location</p>
-          <p className="text-black text-base">One World Place, Lane R, BGC</p>
-        </div>
-      </div>
-
-      <div className="flex flex-row items-center justify-start w-734px h-170px gap-[10px]">
-        <Image src={Home} alt="vb" className="overflow-clip"></Image>
-        <div className="flex flex-col">
-          <p className="text-black font-bold text-sm">Our Location</p>
-          <p className="text-black text-base">One World Place, Lane R, BGC</p>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }

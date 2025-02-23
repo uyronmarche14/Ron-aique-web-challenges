@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import img1 from "@/public/Rectangle 4592 (1).png";
 import img2 from "@/public/Rectangle 4592.png";
 import img3 from "@/public/Rectangle 4593.png";
@@ -13,8 +13,9 @@ const Product_Section = () => {
   const scrollLeft = useRef(0);
 
   interface products {
+    id: number;
     name: string;
-    logoUrl: string;
+    logoUrl: StaticImageData;
   }
   const products: products[] = [
     { id: 1, name: "p1", logoUrl: img2 },
