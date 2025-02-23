@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Home from "@/public/Frame 1000004364.png";
 
-export const Contact = () => {
+export default function Contact() {
   interface products {
     id: number;
     name: string;
@@ -53,6 +53,4 @@ export const Contact = () => {
       </div>
     </div>
   );
-};
-
-export default Contact;
+}
