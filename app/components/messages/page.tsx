@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export const Messages = () => {
+export default function Messages() {
   const [clicked, setClicked] = useState<number | null>(null);
   interface inputString {
     id: number;
@@ -88,4 +88,4 @@ export const Messages = () => {
       </div>
     </div>
   );
-};
+}

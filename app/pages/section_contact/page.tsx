@@ -1,5 +1,5 @@
 import Contact from "@/app/components/contact/page";
-import { Messages } from "@/app/components/messages/page";
+import Messages from "@/app/components/messages/page";
 
 export const Product_Section = () => {
   return (
