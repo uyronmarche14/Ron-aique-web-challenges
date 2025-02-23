@@ -5,7 +5,7 @@ import img2 from "@/public/Rectangle 4592.png";
 import img3 from "@/public/Rectangle 4593.png";
 import { useState, useRef } from "react";
 
-export const Product_Section = () => {
+const Product_Section = () => {
   const [selected, setSelected] = useState<number | null>(null);
   const contref = useRef<HTMLDivElement>(null);
   const dragging = useRef(false);
@@ -13,7 +13,6 @@ export const Product_Section = () => {
   const scrollLeft = useRef(0);
 
   interface products {
-    id: number;
     name: string;
     logoUrl: string;
   }

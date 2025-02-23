@@ -3,7 +3,7 @@ import Image from "next/image";
 import buttonVec from "@/public/buttonlogo.png";
 import logoball from "@/public/loglball.png";
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <div className="space-between flex justify-between flex flex-col items-center w-full h-full pt-[24px] pb-[12px] gap-[12px] min-h-[244px] md:w-[1480px] md:h-[300px] md:min-h-[224px] md:px-[64px] md:pb-[12px] p-[64px] gap-4 overflow-clip rounded-[12px]">
       <Image
