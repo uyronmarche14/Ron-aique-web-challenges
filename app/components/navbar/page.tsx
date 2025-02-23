@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import logo from "@/public/aique_logo.png";
 
-export default function Navbar() {
+const Navbar = () => {
   interface products {
     id: number;
     name: string;
@@ -58,4 +58,6 @@ export default function Navbar() {
       </div>
     </div>
   );
-}
+};
+
+export default Navbar;
