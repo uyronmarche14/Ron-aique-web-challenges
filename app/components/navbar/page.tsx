@@ -35,7 +35,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="justify-between flex flex-row p-3 gap-[10px] w-[430px] h-66px md:w-[1728PX] md:h-full min-h-64px justify-between md:px-[124px] md:py-[12px]">
+    <div className="justify-between flex flex-row p-3 gap-[10px] w-[430px] h-66px md:w-[1728px] md:h-full min-h-64px justify-between md:px-[124px] md:py-[12px]">
       <div className="h-fit w-fit ">
         <Image src={logo} alt="Logo" className="h-[32px] w-[32px]" />
       </div>

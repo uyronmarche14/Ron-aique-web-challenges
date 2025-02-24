@@ -13,7 +13,9 @@ export default function Home() {
       <section className="flex flex-col w-full h-full gap-3 p-3 md:px-[124px] md:pt-[12px] md:gap-6 items-center justify-center m-auto">
         {/* links for pages and components  */}
         <Hero />
+        {/* Carousel Card */}
         <Ps />
+        {/* Contact and Messages */}
         <Sc />
       </section>
     </div>

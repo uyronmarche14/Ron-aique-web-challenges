@@ -2,6 +2,9 @@ import Image, { StaticImageData } from "next/image";
 import Home from "@/public/Frame 1000004364.png";
 
 export default function Contact() {
+  {
+    /* Sample Data using interface */
+  }
   interface products {
     id: number;
     name: string;
@@ -14,7 +17,9 @@ export default function Contact() {
       logoUrl: Home,
     },
   ];
-
+  {
+    /* contact container */
+  }
   return (
     <div className="space-between justify-start items-start w-[406px] h-[274px] px-[12px] gap-[12px] md:w-[734px] md:h-[277px] flex flex-col gap-[12px]">
       <div className="flex flex-col items-start justify-start">
@@ -29,6 +34,7 @@ export default function Contact() {
           tempor
         </p>
       </div>
+      {/* mapping data for a more dynamic appreoach*/}
       {[...Array(3)].map((_, index) => (
         <div
           key={index}
