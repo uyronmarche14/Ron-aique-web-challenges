@@ -49,19 +49,19 @@ export default function Messages() {
   }
   const blurredDots = () => {
     return (
-      <div className="absolute inset-0 h-[276px] w-[176px] rounded-full blur-[60px] bg-gradient-to-r from-dot1blue to-dot2vio "></div>
+      <div className="absolute inset-0 h-[276px] w-[176px] rounded-full blur-[60px] bg-gradient-to-r from-dot2vio to-dot1blue "></div>
     );
   };
   return (
     <div className="relative w-[406px] md:w-[734px] h-[476px] p-[24px] items-center justify-center flex flex-col ">
-      <div className="flex flex-col w-[358px] md:w-[686px] h-[428px] rounded-[12px] p-[24px] gap-[12px] bg-[rgba(212,203,255,0.4)] bg-clip-padding backdrop-filter backdrop-blur relative z-10 blur-17px transparent-bg">
-        <div className="absolute bottom-[140px] left-[-40px] bg-clip-content ">
-          {/* implementing the blured dots background */}
-          {blurredDots()}
-        </div>
-        <div className="absolute bottom-[480px] right-[100px] bg-clip-content ">
-          {blurredDots()}
-        </div>
+      <div className="absolute bottom-[140px] left-[-40px] bg-clip-content ">
+        {/* implementing the blured dots background */}
+        {blurredDots()}
+      </div>
+      <div className="absolute bottom-[480px] right-[100px] bg-clip-content ">
+        {blurredDots()}
+      </div>
+      <div className="flex flex-col w-[358px] md:w-[686px] h-[428px] rounded-[12px] p-[24px] gap-[12px] bg-[background: rgba(212, 203, 255, 0.4)] bg-clip-padding backdrop-filter backdrop-blur-[17px] relative z-[10px] shadow-[0_8px_32px_rgba(31,38,135,0.37)] border-[1px] border-[rgba(255,255,255,0.18)] transparent-bg">
         <div className="pb-[24px]">
           <label className="text-black font-bold w-full text-lg ">
             Send us a message
