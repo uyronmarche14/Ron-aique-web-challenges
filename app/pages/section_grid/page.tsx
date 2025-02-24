@@ -1,7 +1,7 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
 import img1 from "@/public/Rectangle 4592 (1).png";
-import img2 from "@/public/Rectangle 4592.png";
+import img2 from "@/public/Rectangle 4592 (2).png";
 import img3 from "@/public/Rectangle 4593.png";
 {
   /* using useref for accessing the dom and using for the dragging effect, 
@@ -36,11 +36,11 @@ const Product_Section = () => {
 
   const products: products[] = [
     { id: 1, name: "p1", logoUrl: img2 },
-    { id: 2, name: "p2", logoUrl: img1 },
-    { id: 3, name: "p3", logoUrl: img3 },
-    { id: 4, name: "p4", logoUrl: img3 },
+    { id: 2, name: "p2", logoUrl: img3 },
+    { id: 3, name: "p3", logoUrl: img1 },
+    { id: 4, name: "p4", logoUrl: img2 },
     { id: 5, name: "p5", logoUrl: img3 },
-    { id: 6, name: "p6", logoUrl: img3 },
+    { id: 6, name: "p6", logoUrl: img2 },
   ];
   {
     /* selected view function  */
